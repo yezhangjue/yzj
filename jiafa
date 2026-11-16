@@ -1,0 +1,7 @@
+num = int(input("请输入一个三位正整数 "))
+a = num//100
+b = num//10%10
+c = num%10
+sum_total = a+b+c
+print(f"百位：{a},十位：{b},个位：{c}")
+print(f"各位数字之和 = {sum_total}")

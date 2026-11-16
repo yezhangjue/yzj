@@ -1,0 +1,8 @@
+data = list(map(int, input("输入一组数字（空格隔开）：").split()))
+data.sort()                # 内置排序
+max_val = max(data)
+avg_val = sum(data) / len(data)
+
+print(f"排序后列表：{data}")
+print(f"最大值：{max_val}")
+print(f"平均值：{avg_val:.2f}")

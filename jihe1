@@ -1,0 +1,16 @@
+# 输入示例：用逗号隔开数字
+a_list = list(map(int, input("输入第一个集合（逗号分隔）：").split(',')))
+b_list = list(map(int, input("输入第二个集合（逗号分隔）：").split(',')))
+
+s1 = set(a_list)
+s2 = set(b_list)
+
+inter = s1 & s2       # 交集
+union = s1 | s2       # 并集
+diff1 = s1 - s2       # s1 减 s2
+diff2 = s2 - s1       # s2 减 s1
+
+print(f"交集：{inter}")
+print(f"并集：{union}")
+print(f"集合 1 - 集合 2：{diff1}")
+print(f"集合 2 - 集合 1：{diff2}")

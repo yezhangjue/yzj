@@ -1,0 +1,6 @@
+# 方法：读字符串，不怕数字很大
+s = input("请输入一个自然数：")
+total = 0
+for ch in s:
+    total += int(ch)
+print(f"各位数字之和：{total}")
